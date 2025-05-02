@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #ffffff;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .profile-img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .remember-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .remember-container input {
+      margin-right: 5px;
+    }
+
+    .bottom-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cancel-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .forgot-password {
+      color: gray;
+      font-size: 14px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <!-- Replace the image URL below with your local path or another image URL -->
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User" class="profile-img" />
+    
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter Username" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" />
+
+      <button type="submit" class="login-btn">Login</button>
+
+      <div class="remember-container">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+      </div>
+
+      <div class="bottom-buttons">
+        <button type="button" class="cancel-btn">Cancel</button>
+        <span class="forgot-password">Forgot password?</span>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

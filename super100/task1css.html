@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #3366cc;
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 10px;
+      margin-bottom: 40px;
+    }
+
+    th, td {
+      padding: 10px 20px;
+      text-align: center;
+      border: 2px solid black;
+      border-radius: 50px;
+      background-color: #9bd3d3;
+      min-width: 80px;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    .box-container {
+      display: grid;
+      grid-template-columns: repeat(3, 80px);
+      gap: 20px;
+    }
+
+    .box {
+      width: 80px;
+      height: 50px;
+      border: 2px solid #8bc34a;
+      border-radius: 10px;
+    }
+
+    .oval {
+      width: 80px;
+      height: 50px;
+      border: 2px solid #8bc34a;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Task 1</h1>
+
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+  <div class="box-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="oval"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>

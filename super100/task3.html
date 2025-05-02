@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .form-container {
+            border: 2px solid black;
+            padding: 20px;
+            width: 100%;
+            max-width: 450px;
+            background-color: white;
+            text-align: left;
+            margin: auto;
+            position: relative;
+        }
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 40%;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 55%;
+            padding: 5px;
+        }
+        .form-group input[type="radio"], .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .declaration {
+            text-align: left;
+        }
+        .register-box {
+            border: 2px solid black;
+            padding: 15px;
+            width: 120px;
+            background-color: white;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .register-box button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .login-link {
+            text-align: right;
+            color: black;
+            margin-top: 10px;
+        }
+        .login-link a {
+            color: black;
+            text-decoration: none;
+        }
+        .login-link a u {
+            text-decoration: underline;
+        }
+        hr {
+            width: calc(100% + 40px);
+            border: none;
+            border-top: 2px solid black;
+            margin: 10px -20px; 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <div class="form-container">
+        <form action="/submit_registration" method="post">
+
+            <div class="form-group">
+                <label for="firstName"><strong>First Name:</strong></label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="lastName"><strong>Last Name:</strong></label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" id="email" name="email">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="password"><strong>Password:</strong></label>
+                <input type="password" id="password" name="password">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="reenterPassword"><strong>Re-enter Password:</strong></label>
+                <input type="password" id="reenterPassword" name="reenterPassword">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label><strong>Gender:</strong></label>
+                <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="age"><strong>Age:</strong></label>
+                <input type="number" id="age" name="age">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="phoneNumber"><strong>Phone Number:</strong></label>
+                <input type="tel" id="phoneNumber" name="phoneNumber">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="address"><strong>Address:</strong></label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="state"><strong>State:</strong></label>
+                <input type="text" id="state" name="state">
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="country"><strong>Country:</strong></label>
+                <select id="country" name="country">
+                    <option value="">Choose your country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label><strong>Languages known:</strong></label>
+                <input type="checkbox" id="english" name="languages" value="english"> <label for="english">English</label>
+                <input type="checkbox" id="kannada" name="languages" value="kannada"> <label for="kannada">Kannada</label>
+                <input type="checkbox" id="hindi" name="languages" value="hindi"> <label for="hindi">Hindi</label>
+                <input type="checkbox" id="telugu" name="languages" value="telugu"> <label for="telugu">Telugu</label>
+            </div>
+            <hr>
+
+            <div class="form-group declaration">
+                <input type="checkbox" id="declaration" name="declaration" value="true">
+                <label for="declaration"><strong>Hereby I declare all the given details are true</strong></label>
+            </div>
+            <hr>
+
+            <p class="login-link">
+                <a href="https://acharyawebsite.com" target="_blank">
+                    Login to <u>Acharya</u> website
+                </a>
+            </p>
+
+        </form>
+    </div>
+
+    <div class="register-box">
+        <button type="submit">Register</button>
+    </div>
+
+</body>
+</html>
